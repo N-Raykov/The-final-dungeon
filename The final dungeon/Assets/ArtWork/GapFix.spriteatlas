@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GapFix
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+    totalSpriteSurfaceArea: 16970
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1839998147110866507, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -8143584818952536569, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -3149050133103254212, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -5574873882498854606, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -9052792337493064725, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7870807981238829915, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -1347233719151212251, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 5327950094024008212, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 6615319868462110837, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 2185041290902523119, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 8970763576347242229, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 2466828561161279858, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 2592197434785513267, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 7555821830959073814, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 745968338076216934, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -2834699621007424056, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -8369517905372312421, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -9106852675655700425, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -1291705123832498677, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 7182614658172301277, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7826287199498012479, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 3823991837180300354, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4204374477710404856, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 2748396297729853354, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4971049064686688367, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -4446556834619780616, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -3513202607186615407, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -9198928466637730507, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 1726203059708922746, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 3628468241054914511, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7450669156800766785, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4355180666568580090, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -4272707242783423304, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 5894979182433546639, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -407774699277236136, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7503008079389545076, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -5599750456436461424, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7566632554201152900, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -6721728136321296765, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 7870480730772048316, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 5035139237759867391, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7424474914276003461, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 3235062197104327778, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 6913638643635410091, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7479814810284170135, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 7214893647509974784, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -2151125692419375991, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4564897580977227239, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -2217874986795218178, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 7029400602700474323, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -6613792370922084840, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -2386295036631077607, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -1988828135353101337, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -4869357254534750094, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4018074224661003100, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -6026731920720571777, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 8340130823153958410, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -9037411367760340442, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 219433517873854331, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4101294306171259788, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 620111541035404702, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -2016447386726003157, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4596313960938759734, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -2285114424382770006, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 5330871289308464701, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -69871916218363647, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -7548257428066557718, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 3059076114534577413, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4289113178680934050, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - weapon_4
+  - weapon_5
+  - portal_0
+  - portal_1
+  - portal_2
+  - portal_3
+  - healingFountain_2
+  - healingFountain_0
+  - healingFountain_1
+  - crate_1
+  - crate_0
+  - crate_3
+  - crate_2
+  - menu_0
+  - floor_6
+  - floor_7
+  - floor_4
+  - floor_5
+  - floor_2
+  - floor_3
+  - floor_0
+  - floor_1
+  - chest_1
+  - floor_8
+  - chest_0
+  - floor_9
+  - wall_8
+  - wall_9
+  - wall_6
+  - wall_7
+  - wall_4
+  - stairs_0
+  - wall_5
+  - stairs_1
+  - wall_2
+  - stairs_2
+  - wall_3
+  - stairs_3
+  - wall_0
+  - wall_1
+  - pillar_2
+  - pillar_3
+  - pillar_0
+  - pillar_1
+  - pillar_4
+  - pillar_5
+  - floor_11
+  - enemy_0
+  - floor_10
+  - floor_12
+  - wall_11
+  - wall_10
+  - wall_12
+  - player_1
+  - player_0
+  - torch_8
+  - torch_2
+  - torch_3
+  - torch_0
+  - torch_1
+  - torch_6
+  - torch_7
+  - torch_4
+  - torch_5
+  - weapon_2
+  - weapon_3
+  - weapon_0
+  - weapon_1
+  - weapon_6
+  m_Tag: GapFix
+  m_IsVariant: 0
