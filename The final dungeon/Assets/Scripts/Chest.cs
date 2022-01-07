@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chest : Collectable
 {
     public Sprite emptyChest;
-    public int coinAmount = 20;
+    public int coinAmount = 25;
 
     protected override void OnCollect()
     {

@@ -8,6 +8,11 @@ public class CameraMotor : MonoBehaviour
     public float boundX = 3f;
     public float boundY = 1.5f;
 
+    private void Start()
+    {
+        lookAt = GameObject.Find("Player").transform;
+    }
+
     private void LateUpdate()
     {
         Vector3 delta = Vector3.zero;
