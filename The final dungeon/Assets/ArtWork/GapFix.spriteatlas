@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
-    totalSpriteSurfaceArea: 16970
+    totalSpriteSurfaceArea: 18250
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -93,9 +93,11 @@ SpriteAtlas:
   - {fileID: 6913638643635410091, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -7479814810284170135, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: 7214893647509974784, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: -6190716609726613716, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -2151125692419375991, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: 4564897580977227239, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -2217874986795218178, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 4873919324978898756, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: 7029400602700474323, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -6613792370922084840, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -2386295036631077607, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
@@ -163,9 +165,11 @@ SpriteAtlas:
   - pillar_1
   - pillar_4
   - pillar_5
+  - boss_0
   - floor_11
   - enemy_0
   - floor_10
+  - enemy_1
   - floor_12
   - wall_11
   - wall_10

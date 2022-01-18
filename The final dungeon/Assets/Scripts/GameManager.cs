@@ -11,31 +11,44 @@ public class GameManager : MonoBehaviour
         if (GameManager.instance != null)
         {
             Destroy(gameObject);
+            Destroy(player.gameObject);
+            Destroy(floatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
             return;
         }
 
         instance = this;
-        SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
+        //SceneManager.sceneLoaded += LoadState;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    //Resources
     public List<Sprite> playerSprites;
     public List<Sprite> weaponSprites;
     public List<int> weaponPrices;
     public List<int> xpTable;
 
+    //References
     public Player player;
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+    public Animator deathMenuAnim;
+    public GameObject hud;
+    public GameObject menu;
 
+    //Logic
     public int coins;
     public int experience;
 
+    //Floating text
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
     }
 
+    //Upgrade Weapon
     public bool TryUpgradeWeapon()
     {
         if (weaponPrices.Count <= weapon.weaponLevel)
@@ -51,6 +64,13 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    public void OnHitpointChange()
+    {
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
+    }
+
+    //Experience System
     public int GetCurrentLevel()
     {
         int r = 0;
@@ -89,12 +109,33 @@ public class GameManager : MonoBehaviour
             OnLevelUp();
     }
 
-    public void OnLevelUp()
+    public void GrantCoints(int coinValue)
     {
-        ShowText("Level up!", 30, Color.magenta, transform.position, Vector3.up * 40, 1f);
-        player.OnLevelUp();
+        coins += coinValue;
     }
 
+    public void OnLevelUp()
+    {
+        ShowText("Level up!", 30, Color.magenta, player.transform.position, Vector3.up * 40, 1f);
+        player.OnLevelUp();
+        OnHitpointChange();
+    }
+
+    //On Scene Loaded
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    {
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+    }
+
+    public void Respawn()
+    {
+        deathMenuAnim.SetTrigger("Hide");
+        SceneManager.LoadScene("Main");
+        player.Respawn();
+    }
+
+    //Save and Load States
+    /*
     public void SaveState()
     {
         string s = "";
@@ -107,8 +148,11 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("SaveState", s);
     }
 
-    public void LoadState(Scene s, LoadSceneMode mode)
+    
+        public void LoadState(Scene s, LoadSceneMode mode)
     {
+        SceneManager.sceneLoaded -= LoadState;
+
         if (!PlayerPrefs.HasKey("SaveState"))
             return;
 
@@ -122,7 +166,6 @@ public class GameManager : MonoBehaviour
             player.SetLevel(GetCurrentLevel());
 
         weapon.SetWeaponLevel(int.Parse(data[3]));
-
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
+        */
 }

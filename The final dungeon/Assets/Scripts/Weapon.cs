@@ -12,7 +12,6 @@ public class Weapon : Collidable
 
 
     private Animator anim;
-    private float cooldown = 0.5f;
     private float lastSwing;
     
     protected override void Start()
@@ -28,7 +27,7 @@ public class Weapon : Collidable
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            lastSwing= Time.time;
+            lastSwing = Time.time;
                 Swing();
         }
     }

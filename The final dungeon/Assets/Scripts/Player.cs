@@ -5,13 +5,32 @@ using UnityEngine;
 public class Player : Mover
 {
     private SpriteRenderer spriteRenderer;
+    private bool isAlive = true;
 
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
-        DontDestroyOnLoad(gameObject);
+    protected override void RecieveDamage(Damage dmg)
+    {
+        if (!isAlive)
+            return;
+
+        base.RecieveDamage(dmg);
+        GameManager.instance.OnHitpointChange();
+    }
+
+    protected override void Death()
+    {
+        //PlayerPrefs.DeleteAll();
+        GameManager.instance.coins = 0;
+        GameManager.instance.experience = 0;
+        GameManager.instance.weapon.weaponLevel = 0;
+        spriteRenderer.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
+        isAlive = false;
+        GameManager.instance.deathMenuAnim.SetTrigger("Show");
     }
 
     private void FixedUpdate()
@@ -19,7 +38,8 @@ public class Player : Mover
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        UpdateMotor(new Vector3(x, y, 0));
+        if(isAlive)
+            UpdateMotor(new Vector3(x, y, 0));
     }
 
     public void SwapSprite(int skinId)
@@ -38,5 +58,27 @@ public class Player : Mover
         {
             OnLevelUp();
         }
+    }
+
+    public void Heal(int healingAmount)
+    {
+        if (hitpoint == maxHitpoint)
+            return;
+
+        hitpoint += healingAmount;
+
+        if (hitpoint > maxHitpoint)
+            hitpoint = maxHitpoint;
+
+        GameManager.instance.ShowText("+" + healingAmount.ToString() + " hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+        GameManager.instance.OnHitpointChange();
+    }
+
+    public void Respawn()
+    {
+        Heal(maxHitpoint);
+        isAlive = true;
+        lastImmune = Time.time;
+        pushDirection = Vector3.zero;
     }
 }

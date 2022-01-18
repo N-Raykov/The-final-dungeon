@@ -6,6 +6,7 @@ public class Enemy : Mover
 {
     //Experience
     public int xpValue = 1;
+    public int coinValue = 1;
 
     //Logic
     public float triggerLength = 1;
@@ -74,6 +75,8 @@ public class Enemy : Mover
     {
         Destroy(gameObject);
         GameManager.instance.GrantXp(xpValue);
-        GameManager.instance.ShowText("+" + xpValue + " xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1f);
+        GameManager.instance.GrantCoints(coinValue);
+        GameManager.instance.ShowText("+" + xpValue + " xp", 30, Color.yellow, GameManager.instance.player.transform.position, Vector3.up * 40, 1f);
+        GameManager.instance.ShowText("+" + coinValue + " coins", 30, Color.magenta, transform.position + Vector3.up, Vector3.up * 40, 1f);
     }
 }
