@@ -8,6 +8,11 @@ public class Boss : Enemy
     public float distance = 0.25f;
     public Transform[] fireballs;
 
+    private void Awake()
+    {
+        portal = GameObject.Find("Portal").GetComponent<Portal>();
+    }
+
     private void Update()
     {
         for(int i = 0; i < fireballSpeed.Length; i++)

@@ -128,7 +128,7 @@ MonoBehaviour:
   pushRecoverySpeed: 0.1
   boxCollider: {fileID: 0}
   ySpeed: 3
-  xSpeed: 4
+  xSpeed: 3
   xpValue: 1
   coinValue: 1
   triggerLength: 3

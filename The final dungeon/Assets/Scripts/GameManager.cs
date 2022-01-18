@@ -123,7 +123,7 @@ public class GameManager : MonoBehaviour
 
     //On Scene Loaded
     public void OnSceneLoaded(Scene s, LoadSceneMode mode)
-    {
+    {   
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
 
@@ -131,6 +131,10 @@ public class GameManager : MonoBehaviour
     {
         deathMenuAnim.SetTrigger("Hide");
         SceneManager.LoadScene("Main");
+        coins = 0;
+        experience = 0;
+        weapon.weaponLevel = 0;
+        weapon.spriteRenderer.sprite = weaponSprites[weapon.weaponLevel];
         player.Respawn();
     }
 

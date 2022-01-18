@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
-    totalSpriteSurfaceArea: 18250
+    totalSpriteSurfaceArea: 19274
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -98,6 +98,7 @@ SpriteAtlas:
   - {fileID: 4564897580977227239, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -2217874986795218178, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: 4873919324978898756, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
+  - {fileID: 310630301815266069, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: 7029400602700474323, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -6613792370922084840, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
   - {fileID: -2386295036631077607, guid: ac2ee8f7f50ebcc43b56ff8e4f30cb7a, type: 3}
@@ -170,6 +171,7 @@ SpriteAtlas:
   - enemy_0
   - floor_10
   - enemy_1
+  - enemy_2
   - floor_12
   - wall_11
   - wall_10

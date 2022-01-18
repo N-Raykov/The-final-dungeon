@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : Mover
-{
+{   
+    //extra scuffed code
+    public Portal portal;
+
     //Experience
     public int xpValue = 1;
     public int coinValue = 1;
@@ -50,8 +53,9 @@ public class Enemy : Mover
         }
         else
         {
-            UpdateMotor(startingPosition - transform.position);
+            UpdateMotor((startingPosition - transform.position).normalized);
             chasing = false;
+            hitpoint = maxHitpoint;
         }
 
         collidingWithPlayer = false;
@@ -78,5 +82,6 @@ public class Enemy : Mover
         GameManager.instance.GrantCoints(coinValue);
         GameManager.instance.ShowText("+" + xpValue + " xp", 30, Color.yellow, GameManager.instance.player.transform.position, Vector3.up * 40, 1f);
         GameManager.instance.ShowText("+" + coinValue + " coins", 30, Color.magenta, transform.position + Vector3.up, Vector3.up * 40, 1f);
+        portal.canUse = true;
     }
 }

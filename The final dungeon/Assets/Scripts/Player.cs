@@ -25,10 +25,6 @@ public class Player : Mover
     protected override void Death()
     {
         //PlayerPrefs.DeleteAll();
-        GameManager.instance.coins = 0;
-        GameManager.instance.experience = 0;
-        GameManager.instance.weapon.weaponLevel = 0;
-        spriteRenderer.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
         isAlive = false;
         GameManager.instance.deathMenuAnim.SetTrigger("Show");
     }
